@@ -1,0 +1,8 @@
+{
+    "Tags": ["Information", "Knowledge", "Perception", "Practice", "Social Environment", "Structural Factor"],
+    "id": "source_id",
+    "Link": "link",
+    "tagsColName": "dimension",
+    "TableHeadersCleaned": ["Study", "Behavioural", "Region", "Date", "Organization", "Link"],
+    "TableHeaders": ["title", "dimension", "region", "source_date", "organisation", "link"]
+}

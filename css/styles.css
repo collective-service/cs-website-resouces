@@ -1,0 +1,15 @@
+.container-fluid {
+    padding-top: 15px;
+}
+
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
