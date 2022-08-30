@@ -14,48 +14,68 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.19/js/jquery.dataTables.min.js"></script>
     <link href='css/styles.css' rel='stylesheet' />
-    <title>Website resources</title>
+    <title></title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="content">
-            <div class="filters">
-                <div class="search">
-                    <label id="searchBox"><input class="form-control" id="searchInput" type="text" placeholder="Search.."></label>
-                </div>
-                <div class="dimensionFilter"></div>
-                <div class="dropdown">
-                    <div class="regionDropdown">
-                        <select name="regionSelect" id="regionSelect"></select>
+        <main>
+            <!-- title -->
+            <section>
+                <h1>RCCE resources</h1>
+            </section>
+            <!-- search and tags -->
+            <section>
+                <div id="tags">
+                    <div class="search">
+                        <label id="searchBox"><input class="form-control" id="searchInput" type="text" placeholder="Search.."></label>
+                    </div>
+                    <div class="dimensionFilter"></div>
+                    <div class="advanced-search">
+                        <button id="more-filters">more filters</button>
+                        <div class="advanced-filters hidden">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illum eligendi voluptates porro quae itaque delectus veritatis maxime quasi sit, maiores animi ex sunt tempora? Libero quia quam deleniti ducimus.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="download">
-                    <button class="btn btn-tertiary exportData" id="exportTable">
-                        <i class="fa fa-download"> </i> download table data
-                    </button>
+            </section>
+            <!-- table -->
+            <section>
+                <!-- <div class="content">
+                    <div class="filters">
+                        <div class="filter-">
+                            <h6>RCCE Journey</h6>
+                        </div>
+                        <div class="filter-">
+                            <h6>RCCE Subgroups</h6>
+                        </div>
+                        <div class="filter-">
+                            <h6>Localisation</h6>
+                        </div>
+                        <div class="filter-">
+                            <h6>Data Format</h6>
+                        </div>
+                    </div>
+                    <div class="scrollable">
+                        <div class="datatable">
+                            <table id="datatable" class="row-border" style="width:100%">
+                                <thead></thead>
+                            </table>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="scrollable">
+                    <div class="datatable">
+                        <table id="datatable" class="row-border" style="width:100%">
+                            <thead></thead>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="datatable">
-                <table id="datatable" class="row-border" style="width:100%">
-                    <thead></thead>
-                </table>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
     <script type='text/javascript' src='js/bundle.js'></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YSD75PSDH5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-YSD75PSDH5');
-    </script> -->
 </body>
 
 </html>

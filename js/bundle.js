@@ -1,5 +1,6 @@
 //BRR
-const dataURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRpEYi7ap7o89ZILw58orkWksC2MlsOWS9Q4loIXgb46qfKxRNp01QmY-FGwHLi5NZNz80Aa_k3Pjt5/pub?gid=1612863274&single=true&output=csv";
+//"https://docs.google.com/spreadsheets/d/e/2PACX-1vRpEYi7ap7o89ZILw58orkWksC2MlsOWS9Q4loIXgb46qfKxRNp01QmY-FGwHLi5NZNz80Aa_k3Pjt5/pub?gid=1612863274&single=true&output=csv";
+const dataURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSZmYvJRU25HAiWMu6xscYINvLxMWmTNls474hTIczFrnMI_afgtaXl5PPUwiSIfU0L6Zjfhn9wtv03/pub?gid=0&single=true&output=csv";
 const configURL = "data/config.json";
 
 let config;
@@ -134,6 +135,7 @@ function getDataTableData(data = filteredResourcesData) {
 
 function generateDataTable() {
     var dtData = getDataTableData();
+    console.log(dtData)
     dataTable = $('#datatable').DataTable({
         data: dtData,
         "columns": [{ //// taille de la premiere col, source_id qui est hidden
@@ -163,13 +165,15 @@ function generateDataTable() {
             // { "searchable" : true, "targets": "_all"},
             // {"type": "myDate","targets": 4}
         ],
-        "pageLength": 20,
-        "bLengthChange": false,
-        "pagingType": "simple_numbers",
+        // "pageLength": 10,
+        // "fixedHeader": true,
+        "paging": false,
+        // "bLengthChange": false,
+        // "pagingType": "simple_numbers",
         "order": [
             [1, 'asc'] // specifie ici le num de colone a sort par defaut
         ],
-        "dom": "Blrtp"
+        "dom": "Blrt"
     });
 
     $('#datatable tbody').on('click', 'td.details-control', function() {
@@ -285,3 +289,12 @@ function updateDataTable(data = filteredResourcesData) {
 $('#searchInput').keyup(function() {
     dataTable.search($('#searchInput').val()).draw();
 });
+
+$("#more-filters").on("click", function() {
+    var moreFiltersOpen = d3.select(".advanced-filters").classed("hidden");
+    if (moreFiltersOpen) {
+        d3.select(".advanced-filters").classed("hidden", false)
+    } else {
+        d3.select(".advanced-filters").classed("hidden", true)
+    }
+})

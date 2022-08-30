@@ -1,15 +1,76 @@
 .container-fluid {
-    padding-top: 15px;
+    overflow: hidden;
 }
 
 body {
-    font-size: 12px;
+    font-size: 0.7rem;
     font-family: sans-serif;
 }
 
+h1 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+section {
+    align-self: center;
+}
+
+#tags {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advanced-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+
 .filters {
+    width: 30%;
+}
+
+.scrollable {
+    height: auto;
+    overflow-y: auto;
+    max-height: calc(100vh - 250px);
+    padding: 0 10px;
+}
+
+
+/* .filters {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+} */
+
+.dimensionFilter {
+    padding: 0 20px 0 20px;
+}
+
+.dimensionFilter .btn {
+    outline: none;
+    display: block;
+    padding: 2px 5px 2px 5px;
+    font-size: 0.7rem;
+    /* line-height: 1.5; */
+    /* color: #fff; */
 }
