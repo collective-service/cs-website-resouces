@@ -18,62 +18,67 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <main>
-            <!-- title -->
-            <section>
-                <h1>RCCE resources</h1>
-            </section>
-            <!-- search and tags -->
-            <section>
-                <div id="tags">
-                    <div class="search">
-                        <label id="searchBox"><input class="form-control" id="searchInput" type="text" placeholder="Search.."></label>
-                    </div>
-                    <div class="dimensionFilter"></div>
-                    <div class="advanced-search">
-                        <button id="more-filters">more filters</button>
-                        <div class="advanced-filters hidden">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illum eligendi voluptates porro quae itaque delectus veritatis maxime quasi sit, maiores animi ex sunt tempora? Libero quia quam deleniti ducimus.
-                            </p>
-                        </div>
-                    </div>
+    <div class="container">
+        <!-- title -->
+        <div class="header">
+            <h1>RCCE resources</h1>
+        </div>
+        <!-- search and tags -->
+        <section>
+            <div id="tags">
+                <div class="search">
+                    <input class="" id="searchInput" type="text" placeholder="Search..">
                 </div>
-            </section>
-            <!-- table -->
-            <section>
-                <!-- <div class="content">
+            </div>
+        </section>
+        <!-- table -->
+        <section>
+            <div class="row">
+                <div class="col-md-3">
                     <div class="filters">
-                        <div class="filter-">
-                            <h6>RCCE Journey</h6>
+                        <h2>Advanced search</h2>
+                        <div class="filter filter-">
+                            <h3>Regions</h3>
+                            <div id="regions"></div>
                         </div>
-                        <div class="filter-">
-                            <h6>RCCE Subgroups</h6>
+                        <div class="filter filter-">
+                            <h3>Area of work</h3>
+                            <select name="" id="areas-of-work"></select>
                         </div>
-                        <div class="filter-">
-                            <h6>Localisation</h6>
+                        <div class="filter filter-">
+                            <h3>RCCE Subgroups</h3>
+                            <select name="" id="subgroups"></select>
                         </div>
-                        <div class="filter-">
-                            <h6>Data Format</h6>
+                        <div class="filter filter-">
+                            <h3>Localisation</h3>
+                            <select name="" id="">
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 2</option>
+                                    <option value="">Option 3</option>
+                                </select>
                         </div>
-                    </div>
-                    <div class="scrollable">
-                        <div class="datatable">
-                            <table id="datatable" class="row-border" style="width:100%">
-                                <thead></thead>
-                            </table>
+                        <div class="filter filter-">
+                            <h3>Data Format</h3>
+                            <select name="" id="">
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 2</option>
+                                    <option value="">Option 3</option>
+                                </select>
                         </div>
-                    </div>
-                </div> -->
-                <div class="scrollable">
-                    <div class="datatable">
-                        <table id="datatable" class="row-border" style="width:100%">
-                            <thead></thead>
-                        </table>
+                        <div class="search-control-btn">
+                            <button type="btn" class="search-btn reset-btn" id="reset"> CLEAR FILTERS</button>
+                            <button type="btn" class="search-btn submit" id="search-apply">Apply filters</button>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
+                <div class="col-md-9 scrollable">
+                    <table id="datatable" class="row-border" style="width:100%">
+                        <thead></thead>
+                    </table>
+                </div>
+            </div>
+    </div>
+    </section>
     </div>
     <script type='text/javascript' src='js/bundle.js'></script>
 </body>

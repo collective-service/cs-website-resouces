@@ -3,6 +3,72 @@
     "id": "ID",
     "Link": "Link",
     "tagsColName": "Areas of work",
-    "TableHeadersCleaned": ["Title", "Summary", "Region", "Date", "Organisation", "Link"],
-    "TableHeaders": ["Title", "Summary", "Region", "Date Insert", "Organisation", "Link"]
+    "TableHeadersCleaned": [""],
+    "TableHeaders": ["Title"],
+    "OthersTableColumns": ["Title", "Summary", "Region", "Date Insert", "Organisation", "Link"],
+    "Dropdowns": {
+        "Region": {
+            "name": "Region",
+            "type": "tag",
+            "data": [],
+            "id": "regions",
+            "filters": []
+        },
+        "Emergency Type": {
+            "name": "Emergency Type",
+            "type": "tag",
+            "data": [],
+            "id": null,
+            "filters": []
+        },
+        "Emergencies": {
+            "name": "Emergencies",
+            "type": "",
+            "data": [],
+            "id": null,
+            "filters": []
+        },
+        "Areas of work": {
+            "name": "Areas of work",
+            "type": "select",
+            "data": [],
+            "id": "areas-of-work",
+            "filters": []
+        },
+        "Learning journey": {
+            "name": "Learning journey",
+            "type": "",
+            "data": [],
+            "id": null,
+            "filters": []
+        },
+        "Helpdesk Category": {
+            "name": "Helpdesk Category",
+            "type": "",
+            "data": [],
+            "id": null,
+            "filters": []
+        },
+        "Subgroups": {
+            "name": "Subgroups",
+            "type": "",
+            "data": [],
+            "id": "subgroups",
+            "filters": []
+        },
+        "Language": {
+            "name": "Language",
+            "type": "",
+            "data": [],
+            "id": null,
+            "filters": []
+        },
+        "Content Type": {
+            "name": "Content Type",
+            "type": "",
+            "data": [],
+            "id": null,
+            "filters": []
+        }
+    }
 }
