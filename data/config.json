@@ -37,9 +37,9 @@
         },
         "Learning journey": {
             "name": "Learning journey",
-            "type": "",
+            "type": "select",
             "data": [],
-            "id": null,
+            "id": "journey",
             "filters": []
         },
         "Helpdesk Category": {
@@ -63,11 +63,11 @@
             "id": null,
             "filters": []
         },
-        "Content Type": {
-            "name": "Content Type",
-            "type": "",
+        "Format": {
+            "name": "Format",
+            "type": "tag",
             "data": [],
-            "id": null,
+            "id": "format",
             "filters": []
         }
     }
