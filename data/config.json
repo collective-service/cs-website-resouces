@@ -51,7 +51,7 @@
         },
         "Subgroups": {
             "name": "Subgroups",
-            "type": "",
+            "type": "select",
             "data": [],
             "id": "subgroups",
             "filters": []

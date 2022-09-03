@@ -110,7 +110,7 @@ function getSelectedTags(elementID) {
     var selections = [];
     items.each(function(idx, btn) {
         const isSelected = $(btn).hasClass('is-selected');
-        isSelected ? selections.push($(btn).text()) : null;
+        isSelected ? selections.push($(btn).val()) : null;
     });
     return selections;
 } //getSelectedTags
@@ -316,14 +316,16 @@ function updateData() {
             if (type === "tag") {
                 // tags
                 const selectionTagArr = getSelectedTags(id);
-                if (selectionTagArr != []) {
+                if (selectionTagArr.length != 0) {
                     data = data.filter(d => { return compareArrays(formatListToArray(d[k]), selectionTagArr); });
                 }
             } else if (type === "select") {
                 // select
                 const selection = $('#' + id).val();
-                selection != "all" ?
-                    data = data.filter(d => { return d[k] == selection; }) : null;
+                if (selection != "all") {
+                    data = data.filter(d => { return formatListToArray(d[k]).includes(selection); });
+                }
+
             }
             // filteredResourcesData = data;
         }
